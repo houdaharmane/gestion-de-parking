@@ -6,7 +6,7 @@ using namespace std;
 
 const int MAX_AUTOMOBILES = 100;
 
-// Déclaration de la structure automobile
+// DÃ©claration de la structure automobile
 struct automobil {
     char immatriculation[20];
     char marque[30];
@@ -102,14 +102,14 @@ void afficherMenu() {
 const int MAX= 100;
 class Conducteur {
 public:
-    // Constructeur par défaut
+    // Constructeur par dÃ©faut
     Conducteur() {
         nom = "";
         prenom = "";
         adresse = "";
         telephone = "";
     }
-      // Constructeur avec paramètres
+      // Constructeur avec paramÃ¨tres
     Conducteur(string n, string p, string a, string t) {
         nom = n;
         prenom = p;
@@ -117,23 +117,23 @@ public:
         telephone = t;
     }
 
-    // Méthode pour afficher les informations du conducteur
+    // MÃ©thode pour afficher les informations du conducteur
     void afficher() {
         cout << "Nom : " << nom << endl;
-        cout << "Prénom : " << prenom << endl;
+        cout << "PrÃ©nom : " << prenom << endl;
         cout << "Adresse : " << adresse << endl;
-        cout << "Téléphone : " << telephone << endl;
+        cout << "TÃ©lÃ©phone : " << telephone << endl;
     }
 
-    // Méthode pour saisir de nouvelles informations pour le conducteur
+    // MÃ©thode pour saisir de nouvelles informations pour le conducteur
     void saisir() {
         cout << "Nom : ";
         cin >> nom;
-        cout << "Prénom : ";
+        cout << "PrÃ©nom : ";
         cin >> prenom;
         cout << "Adresse : ";
         cin >> adresse;
-        cout << "Téléphone : ";
+        cout << "TÃ©lÃ©phone : ";
         cin >> telephone;
     }
 
@@ -171,7 +171,7 @@ public:
             this->conducteurAffecte[nbMissions] = conducteurAffecte;
             nbMissions++;
         } else {
-            cout << "Erreur : impossible d'ajouter une mission car le nombre maximum de missions a été atteint." << endl;
+            cout << "Erreur : impossible d'ajouter une mission car le nombre maximum de missions a Ã©tÃ© atteint." << endl;
         }
     }
 
@@ -202,7 +202,7 @@ public:
             }
         }
         if (!found) {
-            cout << "Aucune mission n'a été trouvée pour le lieu spécifié." << endl;
+            cout << "Aucune mission n'a Ã©tÃ© trouvÃ©e pour le lieu spÃ©cifiÃ©." << endl;
         }
     }
 
@@ -215,7 +215,7 @@ public:
         cout << "Menu principal :" << endl;
         cout << "1. Ajouter une mission" << endl;
         cout << "2. Supprimer une mission" << endl;
-        cout << "3. Rechercher une mission par lieu de départ ou d'arrivée" << endl;
+        cout << "3. Rechercher une mission par lieu de dÃ©part ou d'arrivÃ©e" << endl;
         cout << "4. Afficher toutes les missions" << endl;
         cout << "5. Quitter" << endl;
         cout << "Votre Choix : ";
@@ -258,7 +258,7 @@ int main() {
 
     // Boucle pour ajouter des conducteurs
     while (nb_Conducteurs < MAX) {
-       cout << "Ajouter un conducteur ? (OK/N) ";
+       cout << "Ajouter un conducteur ? (OK/NO) ";
         char reponse;
         cin >> reponse;
 
